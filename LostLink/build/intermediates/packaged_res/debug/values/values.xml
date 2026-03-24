@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#059669</color>
+    <color name="accent_dark">#047857</color>
+    <color name="accent_light">#6ee7b7</color>
+    <color name="bg_body">#f0fdf4</color>
+    <color name="bg_card">#ffffff</color>
+    <color name="danger">#ef4444</color>
+    <color name="gray_100">#f1f5f9</color>
+    <color name="gray_200">#e2e8f0</color>
+    <color name="gray_300">#cbd5e1</color>
+    <color name="gray_400">#94a3b8</color>
+    <color name="gray_50">#f8fafc</color>
+    <color name="gray_500">#64748b</color>
+    <color name="gray_600">#475569</color>
+    <color name="gray_700">#334155</color>
+    <color name="gray_800">#1e293b</color>
+    <color name="gray_900">#0f172a</color>
+    <color name="primary">#16a34a</color>
+    <color name="primary_100">#dcfce7</color>
+    <color name="primary_200">#bbf7d0</color>
+    <color name="primary_50">#f0fdf4</color>
+    <color name="primary_dark">#15803d</color>
+    <color name="primary_light">#4ade80</color>
+    <color name="success">#10b981</color>
+    <color name="warning">#f59e0b</color>
+    <color name="white">#ffffff</color>
+    <string name="about">About</string>
+    <string name="account">Account</string>
+    <string name="all_items">All Items</string>
+    <string name="app_description">Campus Lost &amp; Found Application</string>
+    <string name="app_name">LostLink</string>
+    <string name="back">Back</string>
+    <string name="browse_items">Browse Items</string>
+    <string name="cancel">Cancel</string>
+    <string name="category">Category</string>
+    <string name="contact_info">Contact Information</string>
+    <string name="description">Description</string>
+    <string name="error">Error</string>
+    <string name="found">Found</string>
+    <string name="found_items">Found</string>
+    <string name="gcm_defaultSenderId" translatable="false">329366805062</string>
+    <string name="google_api_key" translatable="false">AIzaSyD848ubeay30yPBRWzK6Dk-bchmlCRBIbY</string>
+    <string name="google_app_id" translatable="false">1:329366805062:android:cc22597e434d1b024d4847</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD848ubeay30yPBRWzK6Dk-bchmlCRBIbY</string>
+    <string name="google_storage_bucket" translatable="false">mobile-project-c0fd9.firebasestorage.app</string>
+    <string name="help">Help &amp; Support</string>
+    <string name="home">Home</string>
+    <string name="item_name">Item Name</string>
+    <string name="loading">Loading...</string>
+    <string name="location">Location</string>
+    <string name="logout">Logout</string>
+    <string name="lost">Lost</string>
+    <string name="lost_items">Lost</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="project_id" translatable="false">mobile-project-c0fd9</string>
+    <string name="report">Report</string>
+    <string name="report_found">Found Item</string>
+    <string name="report_item">Report Item</string>
+    <string name="report_lost">Lost Item</string>
+    <string name="retry">Retry</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search lost items, locations...</string>
+    <string name="settings">Settings</string>
+    <string name="submit">Submit</string>
+    <string name="welcome_description">Help your campus community find lost items and reunite people with their belongings.</string>
+    <string name="welcome_title">Welcome to LostLink</string>
+    <style name="Theme.LostLink" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/primary_50</item>
+    </style>
+</resources>
