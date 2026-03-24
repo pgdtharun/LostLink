@@ -1,5 +1,0 @@
-com.lostlink.app.test.LostLink-jetified-core-1.6.1-0 C:\Users\sachi\.gradle\caches\transforms-3\7830c6e0b03c6d5f70ec46d1bd52843d\transformed\jetified-core-1.6.1\res
-com.lostlink.app.test.LostLink-androidTest-1 E:\akila\Android\LostLink\build\generated\res\resValues\androidTest\debug
-com.lostlink.app.test.LostLink-mergeDebugAndroidTestResources-2 E:\akila\Android\LostLink\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.lostlink.app.test.LostLink-mergeDebugAndroidTestResources-3 E:\akila\Android\LostLink\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.lostlink.app.test.LostLink-merged_res-4 E:\akila\Android\LostLink\build\intermediates\merged_res\debugAndroidTest
