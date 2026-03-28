@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item Detail — LostLink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Css/styles.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="14" width="22" height="20" rx="10" stroke="url(#g1)" stroke-width="3.5" fill="none"/>
+          <rect x="22" y="14" width="22" height="20" rx="10" stroke="url(#g2)" stroke-width="3.5" fill="none"/>
+          <circle cx="35" cy="15" r="7" stroke="url(#g2)" stroke-width="2.5" fill="rgba(255,255,255,0.85)"/>
+          <line x1="40" y1="20.5" x2="44.5" y2="25" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="35" y="18.5" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="800" font-family="Plus Jakarta Sans, sans-serif">?</text>
+          <defs>
+            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#16a34a"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+            <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">LostLink</span>
+      </a>
+
+      <div class="search-bar" style="max-width: 400px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search items..." />
+      </div>
+
+      <div class="navbar-actions">
+        <button class="notification-btn" title="Notifications">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="notification-badge"></span>
+        </button>
+        <a href="report.html" class="btn btn-primary btn-sm btn-rounded">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Report
+        </a>
+        <a href="profile.html" class="nav-avatar" title="Profile">AP</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div style="padding-top: 96px; padding-bottom: 60px;">
+    <div class="container" style="max-width: 1100px;">
+      <!-- Breadcrumbs -->
+      <div class="flex items-center gap-sm text-sm" style="margin-bottom: 24px;">
+        <a href="dashboard.html" class="text-muted" style="transition: color var(--transition-fast);">Dashboard</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--gray-400);"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="dashboard.html" class="text-muted" style="transition: color var(--transition-fast);">Browse</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--gray-400);"><polyline points="9 18 15 12 9 6"/></svg>
+        <span class="text-primary font-medium">Black Leather Backpack</span>
+      </div>
+
+      <!-- Detail Layout -->
+      <div class="detail-container">
+        <!-- Image Gallery -->
+        <div>
+          <div class="detail-gallery animate-fade-in-up">
+            <div class="detail-main-image">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="2" y="7" width="20" height="14" rx="2"/>
+                <path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+              </svg>
+            </div>
+            <div class="detail-thumbnails">
+              <div class="detail-thumb active" style="background: linear-gradient(135deg, var(--primary-50), var(--gray-100));"></div>
+              <div class="detail-thumb" style="background: linear-gradient(135deg, var(--gray-100), var(--gray-200));"></div>
+              <div class="detail-thumb" style="background: linear-gradient(135deg, var(--gray-50), var(--primary-50));"></div>
+            </div>
+          </div>
+
+          <!-- Description Section (below gallery on larger screens) -->
+          <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-200); padding: 28px; margin-top: 24px;" class="animate-fade-in-up" >
+            <h3 style="font-family: var(--font-display); font-size: 1.0625rem; font-weight: 700; color: var(--gray-900); margin-bottom: 16px;">Description</h3>
+            <p class="detail-description" style="margin-bottom: 0;">
+              Black leather backpack, medium-sized, brand is Herschel. Has a small scratch on the front pocket zipper. 
+              Contains a 13-inch laptop (MacBook Air), a blue water bottle, a notebook with "COMP2003" written on the cover, 
+              and a pencil case. Last seen near the seating area on the second floor of Babbage Building around 2:30 PM. 
+              The backpack has a distinctive red pull-tab on the main zipper.
+            </p>
+          </div>
+
+          <!-- Map -->
+          <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-200); padding: 28px; margin-top: 24px;" class="animate-fade-in-up">
+            <h3 style="font-family: var(--font-display); font-size: 1.0625rem; font-weight: 700; color: var(--gray-900); margin-bottom: 16px;">Last Seen Location</h3>
+            <div class="map-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p>Babbage Building, Floor 2 — Campus Map</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sidebar Info -->
+        <div>
+          <div class="detail-info animate-fade-in-up" style="animation-delay: 100ms;">
+            <div class="flex items-center gap-sm" style="margin-bottom: 16px;">
+              <span class="tag tag-lost">Lost</span>
+              <span class="tag tag-pending">Pending</span>
+            </div>
+            
+            <h1 class="detail-title">Black Leather Backpack</h1>
+
+            <div class="detail-meta">
+              <div class="detail-meta-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span class="detail-meta-label">Date</span>
+                <span class="detail-meta-value">February 17, 2026</span>
+              </div>
+              <div class="detail-meta-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="detail-meta-label">Time</span>
+                <span class="detail-meta-value">~2:30 PM</span>
+              </div>
+              <div class="detail-meta-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="detail-meta-label">Location</span>
+                <span class="detail-meta-value">Babbage Building, Floor 2</span>
+              </div>
+              <div class="detail-meta-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/></svg>
+                <span class="detail-meta-label">Category</span>
+                <span class="detail-meta-value">Bags</span>
+              </div>
+              <div class="detail-meta-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <span class="detail-meta-label">Colour</span>
+                <span class="detail-meta-value">Black with red zipper</span>
+              </div>
+            </div>
+
+            <!-- Reported By -->
+            <h3 style="font-size: 0.8125rem; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px;">Reported By</h3>
+            <div class="detail-reporter">
+              <div class="detail-reporter-avatar">JD</div>
+              <div class="detail-reporter-info">
+                <div class="detail-reporter-name">Jane Doe</div>
+                <div class="detail-reporter-role">BSc Computer Science, Year 2</div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col gap-sm" style="margin-top: 24px;">
+              <button class="btn btn-primary w-full btn-rounded">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Contact Reporter
+              </button>
+              <button class="btn btn-accent w-full btn-rounded">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                This is Mine — Claim
+              </button>
+              <div class="flex gap-sm">
+                <button class="btn btn-secondary flex-1 btn-rounded" style="flex: 1;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                  Save
+                </button>
+                <button class="btn btn-secondary flex-1 btn-rounded" style="flex: 1;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Similar Items -->
+          <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-200); padding: 24px; margin-top: 24px;" class="animate-fade-in-up" >
+            <h3 style="font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--gray-900); margin-bottom: 16px;">Similar Items</h3>
+            
+            <!-- Similar Item 1 -->
+            <a href="#" style="display: flex; gap: 12px; padding: 12px; border-radius: var(--radius-sm); transition: background var(--transition-fast); margin-bottom: 8px;" onmouseover="this.style.background='var(--gray-50)'" onmouseout="this.style.background='transparent'">
+              <div style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--primary-50), var(--gray-100)); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gray-300);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 600; font-size: 0.875rem; color: var(--gray-800);">Navy Blue Backpack</div>
+                <div style="font-size: 0.75rem; color: var(--gray-500);">Found — Library, Feb 15</div>
+              </div>
+              <span class="tag tag-found" style="align-self: center;">Found</span>
+            </a>
+
+            <!-- Similar Item 2 -->
+            <a href="#" style="display: flex; gap: 12px; padding: 12px; border-radius: var(--radius-sm); transition: background var(--transition-fast);" onmouseover="this.style.background='var(--gray-50)'" onmouseout="this.style.background='transparent'">
+              <div style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--primary-50), var(--gray-100)); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gray-300);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 600; font-size: 0.875rem; color: var(--gray-800);">Black Rucksack (JanSport)</div>
+                <div style="font-size: 0.75rem; color: var(--gray-500);">Lost — SU, Feb 12</div>
+              </div>
+              <span class="tag tag-lost" style="align-self: center;">Lost</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

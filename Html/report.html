@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report an Item — LostLink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Css/styles.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="14" width="22" height="20" rx="10" stroke="url(#g1)" stroke-width="3.5" fill="none"/>
+          <rect x="22" y="14" width="22" height="20" rx="10" stroke="url(#g2)" stroke-width="3.5" fill="none"/>
+          <circle cx="35" cy="15" r="7" stroke="url(#g2)" stroke-width="2.5" fill="rgba(255,255,255,0.85)"/>
+          <line x1="40" y1="20.5" x2="44.5" y2="25" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="35" y="18.5" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="800" font-family="Plus Jakarta Sans, sans-serif">?</text>
+          <defs>
+            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#16a34a"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+            <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">LostLink</span>
+      </a>
+
+      <div class="navbar-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="dashboard.html" class="nav-link">Browse Items</a>
+        <a href="report.html" class="nav-link active">Report</a>
+      </div>
+
+      <div class="navbar-actions">
+        <button class="notification-btn" title="Notifications">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="notification-badge"></span>
+        </button>
+        <a href="profile.html" class="nav-avatar" title="Profile">AP</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div style="padding-top: 96px; padding-bottom: 60px;">
+    <div class="container-md">
+      <!-- Breadcrumbs -->
+      <div class="flex items-center gap-sm text-sm" style="margin-bottom: 24px;">
+        <a href="dashboard.html" class="text-muted" style="transition: color var(--transition-fast);">Dashboard</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--gray-400);"><polyline points="9 18 15 12 9 6"/></svg>
+        <span class="text-primary font-medium">Report Item</span>
+      </div>
+
+      <!-- Page Title -->
+      <div class="page-header">
+        <h1 class="page-title">Report a Lost or Found Item</h1>
+        <p class="page-subtitle">Fill in the details below. The more information you provide, the better the chance of a match.</p>
+      </div>
+
+      <!-- Report Form Card -->
+      <div class="report-form">
+        <!-- Report Type Toggle -->
+        <div class="report-form-header">
+          <h2 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; margin-bottom: 16px;">What would you like to report?</h2>
+          <div class="report-type-toggle">
+            <div class="report-type-btn active-lost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="15" y1="9" x2="9" y2="15"/>
+                <line x1="9" y1="9" x2="15" y2="15"/>
+              </svg>
+              <div class="type-label">I Lost Something</div>
+              <div class="type-desc">Report an item you've lost on campus</div>
+            </div>
+            <div class="report-type-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <div class="type-label">I Found Something</div>
+              <div class="type-desc">Report an item you've found on campus</div>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          <!-- Item Details -->
+          <h3 style="font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-bottom: 20px; color: var(--gray-800);">
+            <span class="flex items-center gap-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Item Information
+            </span>
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label">Item Title</label>
+            <input type="text" class="form-input" placeholder="e.g. Black leather backpack with laptop inside" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select class="form-select">
+                <option value="">Select a category</option>
+                <option>Electronics</option>
+                <option>Bags &amp; Wallets</option>
+                <option>ID &amp; Cards</option>
+                <option>Books &amp; Notes</option>
+                <option>Clothing</option>
+                <option>Accessories / Jewellery</option>
+                <option>Keys</option>
+                <option>Water Bottles</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Colour / Distinguishing Feature</label>
+              <input type="text" class="form-input" placeholder="e.g. Black with red zipper" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Description</label>
+            <textarea class="form-textarea" placeholder="Provide a detailed description of the item — brand, model, markings, damage, contents, etc."></textarea>
+            <p class="form-helper">Be as specific as possible to help others identify the item.</p>
+          </div>
+
+          <!-- Location & Time -->
+          <h3 style="font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin: 32px 0 20px; color: var(--gray-800);">
+            <span class="flex items-center gap-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Location &amp; Time
+            </span>
+          </h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Building / Location</label>
+              <select class="form-select">
+                <option value="">Select a location</option>
+                <option>Babbage Building</option>
+                <option>Charles Seale-Hayne Library</option>
+                <option>Students' Union</option>
+                <option>Smeaton Building</option>
+                <option>Roland Levinsky Building</option>
+                <option>Davy Building</option>
+                <option>Reynolds Building</option>
+                <option>Gym / Sports Centre</option>
+                <option>Robbins Dining Hall</option>
+                <option>Campus Outdoors</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Specific Area (optional)</label>
+              <input type="text" class="form-input" placeholder="e.g. Floor 2, Room 201, Café area" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Approximate Time</label>
+              <input type="time" class="form-input" />
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="form-group">
+            <label class="form-label">Pin Location on Map (optional)</label>
+            <div class="map-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p>Click to pin the location on the campus map</p>
+            </div>
+          </div>
+
+          <!-- Photo Upload -->
+          <h3 style="font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin: 32px 0 20px; color: var(--gray-800);">
+            <span class="flex items-center gap-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              Photo (optional)
+            </span>
+          </h3>
+
+          <div class="form-group">
+            <div class="upload-area">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+              <p><span>Click to upload</span> or drag and drop</p>
+              <p class="upload-hint">PNG, JPG or HEIC up to 10MB</p>
+            </div>
+          </div>
+
+          <!-- Contact Preference -->
+          <h3 style="font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin: 32px 0 20px; color: var(--gray-800);">
+            <span class="flex items-center gap-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Contact Preference
+            </span>
+          </h3>
+
+          <div class="form-group">
+            <div class="form-checkbox" style="margin-bottom: 12px;">
+              <input type="checkbox" id="email-contact" checked />
+              <label for="email-contact">University email (default)</label>
+            </div>
+            <div class="form-checkbox" style="margin-bottom: 12px;">
+              <input type="checkbox" id="msg-contact" />
+              <label for="msg-contact">In-app messages</label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="phone-contact" />
+              <label for="phone-contact">Phone number (optional)</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" class="form-input" placeholder="Phone number (optional)" />
+          </div>
+
+          <!-- Submit -->
+          <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--gray-100);">
+            <div class="flex justify-between items-center">
+              <a href="dashboard.html" class="btn btn-ghost">Cancel</a>
+              <button type="button" class="btn btn-primary btn-lg btn-rounded">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Submit Report
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
