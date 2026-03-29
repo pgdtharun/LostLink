@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LostLink — Campus Lost &amp; Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Css/styles.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Chain link 1 -->
+          <rect x="4" y="14" width="22" height="20" rx="10" stroke="url(#grad1)" stroke-width="3.5" fill="none"/>
+          <!-- Chain link 2 -->
+          <rect x="22" y="14" width="22" height="20" rx="10" stroke="url(#grad2)" stroke-width="3.5" fill="none"/>
+          <!-- Magnifying glass overlay -->
+          <circle cx="35" cy="15" r="7" stroke="url(#grad2)" stroke-width="2.5" fill="rgba(255,255,255,0.85)"/>
+          <line x1="40" y1="20.5" x2="44.5" y2="25" stroke="url(#grad2)" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Question mark in glass -->
+          <text x="35" y="18.5" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="800" font-family="Plus Jakarta Sans, sans-serif">?</text>
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#16a34a"/>
+              <stop offset="100%" stop-color="#4ade80"/>
+            </linearGradient>
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#059669"/>
+              <stop offset="100%" stop-color="#16a34a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">LostLink</span>
+      </a>
+
+      <!-- Nav Links -->
+      <div class="navbar-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="dashboard.html" class="nav-link">Browse Items</a>
+        <a href="report.html" class="nav-link">Report</a>
+        <a href="#about" class="nav-link">About</a>
+      </div>
+
+      <!-- Actions -->
+      <div class="navbar-actions">
+        <a href="#login" class="btn btn-ghost btn-sm">Log In</a>
+        <a href="#register" class="btn btn-primary btn-sm btn-rounded">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Left Column -->
+      <div class="hero-left animate-fade-in-up">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          University of NSBM
+        </div>
+
+        <h1 class="hero-title">
+          Reuniting Campus<br/>With <span>Lost Belongings</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          LostLink is your university's trusted platform to report, search, and recover lost items across campus. Quick, simple, and community-driven.
+        </p>
+
+        <div class="hero-actions">
+          <a href="dashboard.html" class="btn btn-primary btn-lg btn-rounded">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Browse Lost Items
+          </a>
+          <a href="report.html" class="btn btn-secondary btn-lg btn-rounded">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Report an Item
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">1,240+</div>
+            <div class="hero-stat-label">Items Recovered</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">3,800+</div>
+            <div class="hero-stat-label">Active Users</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">92%</div>
+            <div class="hero-stat-label">Recovery Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column — Auth Card -->
+      <div class="hero-right animate-fade-in-up" style="animation-delay: 200ms;">
+        <div class="auth-card">
+          <div class="auth-card-header">
+            <!-- Inline Logo -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="14" width="22" height="20" rx="10" stroke="url(#grad1b)" stroke-width="3.5" fill="none"/>
+              <rect x="22" y="14" width="22" height="20" rx="10" stroke="url(#grad2b)" stroke-width="3.5" fill="none"/>
+              <circle cx="35" cy="15" r="7" stroke="url(#grad2b)" stroke-width="2.5" fill="rgba(255,255,255,0.85)"/>
+              <line x1="40" y1="20.5" x2="44.5" y2="25" stroke="url(#grad2b)" stroke-width="2.5" stroke-linecap="round"/>
+              <text x="35" y="18.5" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="800" font-family="Plus Jakarta Sans, sans-serif">?</text>
+              <defs>
+                <linearGradient id="grad1b" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#16a34a"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+                <linearGradient id="grad2b" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+              </defs>
+            </svg>
+            <h2>Welcome Back</h2>
+            <p>Sign in with your university email</p>
+          </div>
+
+          <!-- Tabs -->
+          <div class="auth-tabs">
+            <div class="auth-tab active">Sign In</div>
+            <div class="auth-tab">Register</div>
+          </div>
+
+          <!-- Sign In Form -->
+          <form>
+            <div class="form-group">
+              <label class="form-label">University Email</label>
+              <div class="form-input-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                <input type="email" class="form-input" placeholder="you@students.plymouth.ac.uk" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Password</label>
+              <div class="form-input-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <input type="password" class="form-input" placeholder="Enter your password" />
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center" style="margin-bottom: 24px;">
+              <div class="form-checkbox">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <a href="#" class="text-sm text-primary font-medium">Forgot password?</a>
+            </div>
+
+            <button type="button" class="btn btn-primary w-full btn-rounded">
+              Sign In
+            </button>
+
+            <div class="form-divider">or continue with</div>
+
+            <button type="button" class="btn btn-secondary w-full btn-rounded">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              University SSO
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES SECTION ========== -->
+  <section style="padding: 96px 24px; background: var(--white);" id="about">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 56px;">
+        <div class="hero-badge" style="margin: 0 auto 16px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          How It Works
+        </div>
+        <h2 style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 800; color: var(--gray-900); letter-spacing: -0.02em;">
+          Find What You've Lost in <span style="background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">3 Simple Steps</span>
+        </h2>
+        <p style="color: var(--gray-500); font-size: 1.0625rem; max-width: 560px; margin: 16px auto 0;">
+          Our streamlined process makes it easy for the university community to report and recover lost belongings.
+        </p>
+      </div>
+
+      <div class="items-grid" style="max-width: 1000px; margin: 0 auto;">
+        <!-- Step 1 -->
+        <div class="card animate-fade-in-up" style="text-align: center; padding: 36px 28px;">
+          <div style="width: 72px; height: 72px; border-radius: var(--radius-md); background: var(--primary-50); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          </div>
+          <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">Step 1</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px;">Report Your Item</h3>
+          <p style="font-size: 0.875rem; color: var(--gray-500); line-height: 1.6;">Describe the item you lost or found with details like location, date, category, and an optional photo.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="card animate-fade-in-up" style="text-align: center; padding: 36px 28px; animation-delay: 150ms;">
+          <div style="width: 72px; height: 72px; border-radius: var(--radius-md); background: #f0fdf4; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div style="font-size: 0.75rem; font-weight: 700; color: var(--success); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">Step 2</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px;">Match &amp; Connect</h3>
+          <p style="font-size: 0.875rem; color: var(--gray-500); line-height: 1.6;">Our system matches lost and found reports. Get notified when a potential match is found on campus.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="card animate-fade-in-up" style="text-align: center; padding: 36px 28px; animation-delay: 300ms;">
+          <div style="width: 72px; height: 72px; border-radius: var(--radius-md); background: #eff6ff; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">Step 3</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px;">Recover &amp; Celebrate</h3>
+          <p style="font-size: 0.875rem; color: var(--gray-500); line-height: 1.6;">Arrange a safe pick-up point on campus and get reunited with your belongings. It's that easy!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RECENT ITEMS SECTION ========== -->
+  <section style="padding: 96px 24px;">
+    <div class="container">
+      <div class="flex justify-between items-center" style="margin-bottom: 40px; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h2 style="font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--gray-900); letter-spacing: -0.02em;">Recently Reported</h2>
+          <p style="color: var(--gray-500); margin-top: 4px;">Latest lost and found items from the campus community</p>
+        </div>
+        <a href="dashboard.html" class="btn btn-secondary btn-rounded">
+          View All
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="items-grid stagger-children">
+        <!-- Item 1 -->
+        <div class="item-card animate-fade-in-up">
+          <div class="item-card-image">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg>
+            </div>
+            <div class="item-card-status">
+              <span class="tag tag-lost">Lost</span>
+            </div>
+            <div class="item-card-bookmark">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </div>
+          </div>
+          <div class="item-card-body">
+            <div class="item-card-title">Black Leather Backpack</div>
+            <div class="item-card-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Babbage Building, Floor 2
+            </div>
+            <div class="card-meta">
+              <span class="tag tag-category">Bags</span>
+              <span class="text-xs text-muted">2 hours ago</span>
+            </div>
+          </div>
+          <div class="item-card-footer">
+            <div class="item-card-user">
+              <div class="item-card-avatar">JD</div>
+              <span class="item-card-username">Jane D.</span>
+            </div>
+            <span class="item-card-date">Today</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item-card animate-fade-in-up">
+          <div class="item-card-image">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <div class="item-card-status">
+              <span class="tag tag-found">Found</span>
+            </div>
+            <div class="item-card-bookmark">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </div>
+          </div>
+          <div class="item-card-body">
+            <div class="item-card-title">iPhone 15 Pro — Space Black</div>
+            <div class="item-card-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Charles Seale-Hayne Library
+            </div>
+            <div class="card-meta">
+              <span class="tag tag-category">Electronics</span>
+              <span class="text-xs text-muted">5 hours ago</span>
+            </div>
+          </div>
+          <div class="item-card-footer">
+            <div class="item-card-user">
+              <div class="item-card-avatar">MK</div>
+              <span class="item-card-username">Mike K.</span>
+            </div>
+            <span class="item-card-date">Today</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item-card animate-fade-in-up">
+          <div class="item-card-image">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <div class="item-card-status">
+              <span class="tag tag-lost">Lost</span>
+            </div>
+            <div class="item-card-bookmark">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </div>
+          </div>
+          <div class="item-card-body">
+            <div class="item-card-title">Student ID Card — Sarah M.</div>
+            <div class="item-card-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Students' Union, Main Hall
+            </div>
+            <div class="card-meta">
+              <span class="tag tag-category">ID / Cards</span>
+              <span class="text-xs text-muted">1 day ago</span>
+            </div>
+          </div>
+          <div class="item-card-footer">
+            <div class="item-card-user">
+              <div class="item-card-avatar">SM</div>
+              <span class="item-card-username">Sarah M.</span>
+            </div>
+            <span class="item-card-date">Yesterday</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 16px;">
+          <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="14" width="22" height="20" rx="10" stroke="url(#grad1c)" stroke-width="3.5" fill="none"/>
+            <rect x="22" y="14" width="22" height="20" rx="10" stroke="url(#grad2c)" stroke-width="3.5" fill="none"/>
+            <circle cx="35" cy="15" r="7" stroke="url(#grad2c)" stroke-width="2.5" fill="rgba(255,255,255,0.85)"/>
+            <line x1="40" y1="20.5" x2="44.5" y2="25" stroke="url(#grad2c)" stroke-width="2.5" stroke-linecap="round"/>
+            <text x="35" y="18.5" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="800" font-family="Plus Jakarta Sans, sans-serif">?</text>
+            <defs>
+              <linearGradient id="grad1c" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#16a34a"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+              <linearGradient id="grad2c" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">LostLink</span>
+        </a>
+        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: 260px; line-height: 1.7;">
+          Helping the University of Plymouth community recover lost belongings since 2025.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="dashboard.html">Browse Items</a>
+        <a href="report.html">Report Lost</a>
+        <a href="report.html">Report Found</a>
+        <a href="#">How It Works</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+      <div class="footer-col">
+        <h4>University</h4>
+        <a href="#">Plymouth Portal</a>
+        <a href="#">Campus Map</a>
+        <a href="#">Student Support</a>
+        <a href="#">Security Office</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 LostLink — Group 84, University of Plymouth. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
