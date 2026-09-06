@@ -56,3 +56,59 @@ LostLink is a mobile app designed to help campus community members:
 2. Sync Gradle dependencies:
    ```bash
    ./gradlew build
+
+Run on an Emulator or Physical Device:
+./gradlew installDebug
+
+🏗 Project Structure
+com/lostlink/app/
+├── ui/
+│   ├── screens/
+│   │   ├── HomeScreen.kt
+│   │   ├── DashboardScreen.kt          # Browse items, search, filter
+│   │   ├── ReportAndDetailScreen.kt    # Report & item details
+│   │   ├── ProfileScreen.kt
+│   │   └── MainActivity.kt             # App entry point
+│   ├── components/
+│   │   └── Components.kt               # Reusable UI components
+│   ├── theme/
+│   │   ├── Theme.kt                    # Color scheme & theme
+│   │   └── Type.kt                     # Typography settings
+│   └── navigation/
+│       └── Navigation.kt               # Navigation routes
+├── data/
+│   ├── model/
+│   │   └── Models.kt                   # Data classes
+│   └── repository/
+│       └── MockDataRepository.kt       # Mock data provider
+
+⚙️ Key Components
+Theme System
+Defined in Theme.kt, utilizing Material 3 components and custom styling to maintain brand consistency across the platform.
+
+Navigation
+Uses Jetpack Navigation with Compose for seamless, type-safe screen transitions:
+
+Home → Dashboard
+
+Dashboard → Report Item
+
+Dashboard → Item Detail
+
+Any Screen → Profile
+
+Next Steps
+
+Backend Integration: Replace MockDataRepository with Retrofit HTTP calls and implement API authentication.
+
+Image Upload: Add camera/gallery picker functionality for item photos and link to backend storage.
+
+Real-time Features: Integrate Firebase Cloud Messaging for push notifications and implement in-app messaging.
+
+Persistence: Add a Room database for local caching and offline data synchronization.
+
+Testing: Write unit tests for ViewModels and UI tests for Compose screens.
+
+📄 Support & License
+For issues or questions about the LostLink Android app, please refer to the main project documentation.
+This project is part of the LostLink Campus Lost & Found platform and is licensed under the MIT License.
