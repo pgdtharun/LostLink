@@ -1,69 +1,58 @@
-LostLink - Android App
-A modern Android application for a campus lost and found system, built with Kotlin and Jetpack Compose.
+# LostLink - Android App
 
-📖 Project Overview
+A modern Android application for a campus lost and found system, built with Kotlin and Jetpack Compose. 
+
+---
+
+## 📖 Project Overview
 LostLink is a mobile app designed to help campus community members:
+* **Browse** lost and found items.
+* **Report** newly lost or found items.
+* **Connect** with others to coordinate item recovery.
+* **Manage** their personal profile and activity.
 
-Browse lost and found items.
+## ✨ Features
 
-Report newly lost or found items.
+* ✅ **Modern Material 3 UI Design** 
+* ✅ **Green Theme** (matches the web application CSS)
+* ✅ **Jetpack Compose** for a declarative UI architecture
+* ✅ **Seamless Navigation** between application screens
+* ✅ **Mock Data Integration** for instant demonstration
+* ✅ **Responsive Layouts** for various screen sizes
+* ✅ **Item Browsing & Filtering** capabilities
+* ✅ **User Profile Management**
 
-Connect with others to coordinate item recovery.
+---
 
-Manage their personal profile and activity.
+## 📱 Screens
 
-✨ Features
-✅ Modern Material 3 UI Design
+1. **Home Screen**
+   * Landing page with app introduction and quick action buttons.
+   * *Actions:* Browse All Items, Get Started, Feature highlights.
+2. **Dashboard Screen**
+   * Browse and filter lost/found items.
+   * *Actions:* Search functionality, Tab filtering (All, Lost, Found), Clickable item cards.
+3. **Report Screen**
+   * Form to report a new lost or found item.
+   * *Fields:* Item name, Description, Location, Category, Contact information.
+4. **Item Detail Screen**
+   * View the full, detailed breakdown of a specific item.
+   * *Details:* Item image, Complete description, Reporter/Finder information, Contact options.
+5. **Profile Screen**
+   * User account management and settings.
+   * *Details:* Profile information, Activity statistics, Settings, Logout.
 
-✅ Green Theme (matches the web application CSS)
+---
 
-✅ Jetpack Compose for a declarative UI architecture
+## 🛠 Getting Started
 
-✅ Seamless Navigation between application screens
+### Prerequisites
+* Android Studio Arctic Fox (or later)
+* Kotlin 1.9.0+
+* Android SDK 28+
 
-✅ Mock Data Integration for instant demonstration
-
-✅ Responsive Layouts for various screen sizes
-
-✅ Item Browsing & Filtering capabilities
-
-✅ User Profile Management
-
-📱 Screens
-Home Screen
-
-Landing page with app introduction and quick action buttons.
-
-Actions: Browse All Items, Get Started, Feature highlights.
-
-Dashboard Screen
-
-Browse and filter lost/found items.
-
-Actions: Search functionality, Tab filtering (All, Lost, Found), Clickable item cards.
-
-Report Screen
-
-Form to report a new lost or found item.
-
-Fields: Item name, Description, Location, Category, Contact information.
-
-Item Detail Screen
-
-View the full, detailed breakdown of a specific item.
-
-Details: Item image, Complete description, Reporter/Finder information, Contact options.
-
-Profile Screen
-
-User account management and settings.
-
-Details: Profile information, Activity statistics, Settings, Logout.
-
-🛠 Getting Started
-Prerequisites
-Android Studio Arctic Fox (or later)
-
-Kotlin 1.9.0+
-
-Android SDK 28+
+### Build & Run
+1. Clone or open the project in Android Studio.
+2. Sync Gradle dependencies:
+   ```bash
+   ./gradlew build
