@@ -9,15 +9,15 @@ Report lost or found items
 Connect with others to coordinate item recovery
 Manage their profile and activity
 Features
-✅ Modern Material 3 UI Design
-✅ Green Theme (matching the web app CSS)
-✅ Jetpack Compose for declarative UI
-✅ Navigation between screens
-✅ Mock data for instant demonstration
-✅ Responsive layouts
-✅ Item browsing and filtering
-✅ User profile management
-
+     ✅ Modern Material 3 UI Design 
+     ✅ Green Theme (matching the web app CSS)
+     ✅ Jetpack Compose for declarative UI
+     ✅ Navigation between screens
+     ✅ Mock data for instant demonstration
+     ✅ Responsive layouts
+     ✅ Item browsing and filtering
+     ✅ User profile management
+     
 Screens
 1. Home Screen
 Landing page with app introduction and quick action buttons
@@ -50,17 +50,7 @@ Contact option
 5. Profile Screen
 User account management
 
-Profile information
-Activity statistics
-Settings
-Logout
-Getting Started
-Prerequisites
-Android Studio Arctic Fox or later
-Kotlin 1.9.0+
-Android SDK 28+
-Build & Run
-Clone/Open the project in Android Studio
+
 
 Support
 For issues or questions about the LostLink Android app, please refer to the main project documentation.
